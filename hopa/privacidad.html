@@ -23,13 +23,14 @@
   </nav>
 
   <h1>Política de privacidad</h1>
-  <p class="sub">Última actualización: 11 de noviembre de 2026</p>
+  <p class="sub">Última actualización: 14 de noviembre de 2026</p>
 
   <div class="tarjeta">
     <h2>En resumen</h2>
-    <p>Hopa no recoge datos sobre ti. No hay publicidad, seguimiento ni analítica, y el desarrollador no tiene
-      servidores que guarden tus mensajes. Tus chats se quedan en tu iPhone y viajan cifrados de teléfono en teléfono
-      hasta quien los recibe.</p>
+    <p>Sin publicidad, seguimiento ni analítica. Tus chats se quedan en tu iPhone. Sin conexión, los mensajes viajan
+      cifrados de teléfono en teléfono; con internet, viajan cifrados de extremo a extremo por iCloud (un servicio de
+      Apple), donde esperan a su destinatario como mucho unas semanas. Nadie más que el destinatario puede leer su
+      contenido: ni Apple ni el desarrollador.</p>
   </div>
 
   <div class="tarjeta">
@@ -53,7 +54,27 @@
       grupos que ya conoces, y Hopa enseña una etiqueta sacada de tu número a unos pocos teléfonos cercanos (como mucho
       20 por hora) para que quien te tenga en su agenda vea tu nombre sin haberos escrito antes. Quien recibe esa
       huella o esa etiqueta podría averiguar tu número probando números uno a uno, así que solo la reciben teléfonos
-      con los que hablas o que tienes cerca.</p>
+      con los que hablas, que tienes cerca o de quien aceptas una invitación (Hopa te lo dice antes de conectar).</p>
+
+    <h2>Internet con iCloud</h2>
+    <p>Si tienes iniciada sesión en iCloud, Hopa usa la base de datos pública de su contenedor de iCloud
+      (iCloud.com.hopa.app) como buzón: cada mensaje se guarda allí cifrado de extremo a extremo hasta que su
+      destinatario lo recoge. Junto al contenido cifrado quedan visibles unos datos técnicos: el identificador de Hopa de
+      quien lo envía y de quien lo recibe, la fecha, el tamaño y el tipo de sobre (mensaje, trozo de archivo, acuse de
+      entrega o de lectura), asociados a un identificador anónimo de tu cuenta de iCloud que Apple crea solo para Hopa.
+      Ni Apple ni el desarrollador pueden leer el contenido, pero el desarrollador sí puede ver esos datos técnicos desde
+      la consola de iCloud.</p>
+    <p>Cada sobre lo borra el iPhone que lo subió cuando ya se ha entregado, o a los 14 días; un mensaje que aún no ha
+      llegado se vuelve a subir mientras siga pendiente (hasta 30 días). Con el modo mensajero activado, tu iPhone también
+      sube a iCloud, cifrados y con tu cuenta, los mensajes de otras personas que lleva de camino. Sin cuenta de iCloud,
+      Hopa solo usa la conexión cercana.</p>
+
+    <h2>Invitaciones</h2>
+    <p>Para invitar a alguien que no está cerca, Hopa guarda en ese buzón tu nombre en Hopa, tu identificador y tu clave
+      pública (nunca tu número), cifrados con el código de la invitación: solo quien tenga el código puede leerlos. Se
+      borran cuando la invitación se usa o a los 30 días. Si no hay iCloud, esos mismos datos van dentro del enlace de
+      invitación. Quien abre tu invitación ve tu nombre antes de decidir si conecta; si conecta, te llegan su nombre y,
+      si tiene activado «Reconocerme por mi número», una huella de su número, cifrados para ti.</p>
 
     <h2>Contactos</h2>
     <p>Si lo permites, Hopa lee tu agenda para mostrar los nombres de tus contactos y saber quiénes usan la app. Los
@@ -90,27 +111,29 @@
       sin pasar por ningún servidor, después de que confirmes en los dos que enseñan el mismo número. El iPhone antiguo
       deja entonces de recibir tus mensajes de Hopa.</p>
 
-    <h2>SMS</h2>
-    <p>Si un mensaje no puede entregarse, Hopa puede proponerte enviarlo por SMS. Se abre la app Mensajes de tu iPhone
-      y eres tú quien lo envía; se aplican las condiciones de tu operador.</p>
-
     <h2>Avisos</h2>
-    <p>Las notificaciones las genera tu propio iPhone cuando llega un mensaje. No se usa ningún servicio de notificaciones
-      del desarrollador.</p>
+    <p>Cuando te llega algo por iCloud, el servicio de notificaciones de Apple avisa a tu iPhone: un aviso genérico
+      («Tienes un mensaje nuevo»), sin remitente ni contenido, y un aviso silencioso para que Hopa lo recoja. La
+      notificación con el nombre y el texto la crea tu propio iPhone al descifrar el mensaje. El desarrollador no tiene
+      ningún servicio de notificaciones propio.</p>
 
-    <h2>Denuncias</h2>
-    <p>Si denuncias a alguien, Hopa prepara un correo al soporte con el motivo, el nombre de esa persona, su
-      identificador de Hopa (y su número si lo tienes en tu agenda), el mensaje o estado denunciado y sus cinco últimos
-      mensajes de texto en ese chat. Lo ves antes de enviarlo y eres tú quien lo envía, desde tu correo; llega a la
-      dirección de soporte, que gestiona Google (Gmail). Se usa solo para revisar la denuncia y se conserva el tiempo
-      necesario para resolverla.</p>
+    <h2>Reportes</h2>
+    <p>Si reportas a alguien, Hopa prepara un correo al soporte con el motivo, el nombre de esa persona, su
+      identificador de Hopa (y su número si lo tienes en tu agenda), los mensajes o el estado reportados y sus cinco
+      últimos mensajes de texto en ese chat. Lo ves antes de enviarlo y eres tú quien lo envía, desde tu correo; llega a
+      la dirección de soporte, que gestiona Google (Gmail). Se usa solo para revisar el reporte y se conserva el tiempo
+      necesario para resolverlo. Los mensajes de WhatsApp se reportan en la propia app de WhatsApp.</p>
 
     <h2>Menores</h2>
     <p>Hopa está pensada para mayores de 13 años.</p>
 
     <h2>Tus derechos y contacto</h2>
     <p>Como los datos están en tu iPhone, puedes verlos, exportarlos o borrarlos desde la propia app (Ajustes › Cuenta).
-      Para cualquier duda escribe a <a href="mailto:ivan.social365@gmail.com">ivan.social365@gmail.com</a>.</p>
+      Al borrarlos, Hopa borra también de iCloud tus invitaciones y los mensajes que tu iPhone subió y siguen pendientes
+      (hace falta conexión; lo que no se pueda borrar en ese momento se queda allí cifrado). Los mensajes de otras
+      personas que lleva tu iPhone se conservan hasta entregarse o caducar. Si quieres que se borren de iCloud los datos
+      técnicos asociados a tu identificador de Hopa, o para cualquier duda, escribe a
+      <a href="mailto:ivan.social365@gmail.com">ivan.social365@gmail.com</a>.</p>
 
     <h2>Cambios</h2>
     <p>Si esta política cambia, se publicará aquí con una nueva fecha.</p>
